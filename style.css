@@ -943,3 +943,136 @@ footer small {
     }
 
 }
+/* ================================
+   HERO SECTION - FINAL ALIGNMENT
+================================ */
+
+.hero {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 40px 70px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Location text */
+.hero-content .eyebrow {
+    margin-bottom: 25px;
+}
+
+/* Main heading */
+.hero h1 {
+    font-size: clamp(60px, 6vw, 105px);
+    line-height: 0.95;
+    margin: 0 0 30px;
+    max-width: 900px;
+}
+
+/* Hero description */
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 720px;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* ================================
+   DESKTOP
+================================ */
+
+@media (min-width: 1200px) {
+
+    .hero-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .hero h1 {
+        max-width: 900px;
+    }
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding: 100px 30px 60px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        max-width: 600px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 700px;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 90px 22px 50px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        line-height: 0.95;
+        max-width: 100%;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
